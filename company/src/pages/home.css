@@ -1,0 +1,87 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-bullet-active{
+  background-color: #000 !important; 
+}
+
+/* ✅ 슬라이드 오버레이 텍스트 */
+.slide-bg-wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide-text-overlay {
+  position: absolute;
+  /* 기존: left: 60px; bottom: 80px; */
+  left: 460px;
+  bottom: 160px;
+  color: #fff;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s cubic-bezier(0.4,0,0.2,1);
+  pointer-events: none;
+  text-align: left;
+  max-width: 400px;         /* 글씨 박스 폭 제한, 예쁘게 */
+  /* background: rgba(0,0,0,0.18);  */
+  /* padding: 30px 30px 24px 30px;   */
+  /* border-radius: 12px;            */
+}
+.slide-text-overlay.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.slide-text-overlay h1 {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  text-align: left;
+}
+.slide-text-overlay p {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 400;
+  white-space: pre-line;
+  margin: 0;
+  text-align: left;
+}
+

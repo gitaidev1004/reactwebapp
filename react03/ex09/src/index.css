@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background:#f6f7fb; color:#222; }
+.container { max-width: 780px; margin: 32px auto; padding: 0 16px; }
+h1 { margin: 0 0 16px; }
+.row { display:flex; gap:8px; }
+input[type="text"] { flex:1; padding:10px; border:1px solid #d9dbe0; border-radius:8px; }
+button { padding:10px 14px; border:1px solid #cfd3da; background:#fff; border-radius:8px; cursor:pointer; }
+button:disabled{ opacity:.6; cursor:not-allowed; }
+.list { margin: 16px 0 0; padding: 0; list-style: none; }
+.item { display:flex; align-items:center; justify-content:space-between; padding:10px 12px; margin-top:8px; background:#fff; border:1px solid #e6e8ee; border-radius:10px; }
+.item .done { text-decoration: line-through; color:#888; }
+.stats { margin-top: 12px; padding: 10px 12px; background:#fff; border:1px solid #e6e8ee; border-radius:10px; }
+.muted { color:#666; font-size: 12px; margin-top: 6px; }
+.error { color: #c0392b; margin-left: 8px; font-size: 12px; }

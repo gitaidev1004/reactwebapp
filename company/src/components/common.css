@@ -1,0 +1,216 @@
+/* common.css */
+.header-overlay {
+  background: transparent;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;          /* ← 100% 말고 100vw */
+  z-index: 999;
+  border: none;
+  box-shadow: none;
+}
+
+
+.header-overlay a {
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7); /* ✅ 이미지 위에서도 가독성 있게 */
+}
+
+.header-overlay .btn-outline-light {
+  border-color: white;
+  color: white;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+
+}
+
+.logogo{
+    background-color: rgb(0, 0, 0);
+    opacity: 100%;
+}
+.footer-container,
+footer .container {
+  max-width: 1440px !important;
+}
+.header-container {
+  max-width: 1440px !important;
+  margin: 0 auto;
+}
+
+.footer-main {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex-shrink: 0;
+}
+
+.footer-left {
+  min-width: 280px;
+  text-align: left;
+}
+
+.footer-center {
+  min-width: 480px;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.footer-center .business-info {
+  margin-bottom: 0.75rem;
+}
+
+.footer-center .business-info span,
+.footer-center .business-info a {
+  margin-right: 8px;
+  color: #6c757d;
+  text-decoration: underline;
+}
+
+.footer-center .business-info a:hover {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #000;
+}
+
+.footer-subtitle {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+.footer-note,
+.footer-small-text {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.footer-link {
+  color: #6c757d;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.footer-right {
+  min-width: 200px;
+  text-align: right;
+}
+
+.footer-right button {
+  display: block;
+}
+
+.qr-code p {
+  margin: 4px 0 0 0;
+  font-size: 0.75rem;
+}
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; /* 높이 맞춤 */
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 210px; /* 예시 높이 */
+}
+
+.footer-left,
+.footer-center {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 추가 */
+}
+
+/* 한샘몰 문의 등 중앙 영역 넓이 조절 */
+.footer-center {
+  min-width: 480px;
+}
+
+
+/* 필요하면 footer-right도 높이 맞추고 싶으면 같은 방식 적용 */
+
+
+/* 홈퍼니싱 드롭다운 메뉴 */
+.dropdown-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-hover:hover .dropdown-menu-hover {
+  display: block;
+}
+
+.dropdown-menu-hover {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  min-width: 150px;
+}
+
+.dropdown-menu-hover li {
+  width: 100%;
+  text-shadow: none !important;
+}
+
+.dropdown-menu-hover .dropdown-item {
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu-hover {
+  background: #fff;
+}
+
+.dropdown-menu-hover .dropdown-item {
+  color: #333; /* 어두운 색상으로 지정 */
+  text-shadow: none !important;
+}
+
+.dropdown-menu-hover .dropdown-item:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}

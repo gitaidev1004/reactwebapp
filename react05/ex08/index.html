@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.8 성능과 최적화</title>
+
+    <!-- ✅ Critical CSS : 초기 렌더링 필수 스타일만 삽입 -->
+    <style>
+      body { margin: 0; font-family: sans-serif; background: #f8f9fa; }
+      header { height: 60px; background: #007bff; color: #fff;
+               display: flex; align-items: center; justify-content: center;
+               font-weight: bold; }
+    </style>
+
+    <!-- ✅ 메인 CSS는 지연 로딩 -->
+    <link rel="preload" href="/src/App.css" as="style" onload="this.rel='stylesheet'">
+  </head>
+  <body>
+    <header>React 5.8 Performance & Optimization</header>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

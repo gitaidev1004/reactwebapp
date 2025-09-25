@@ -1,0 +1,11 @@
+@import "../styles/variables.css";
+.card {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--text-color);
+}
+.card h2 {
+  color: var(--primary-color);
+}

@@ -1,0 +1,12 @@
+@import "./variables.css";
+@media (min-width: var(--breakpoint-md)) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #f1f1f1;
+  }
+}

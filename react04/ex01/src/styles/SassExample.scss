@@ -1,0 +1,8 @@
+$main-color: crimson;
+.title {
+  color: $main-color;
+  font-size: 28px;
+  &:hover {
+    color: darkred;
+  }
+}

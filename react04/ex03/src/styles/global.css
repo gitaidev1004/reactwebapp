@@ -1,0 +1,12 @@
+@import './fonts.css';
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  font-family: 'Nanum Myeongjo', serif;
+}

@@ -1,0 +1,57 @@
+/* 공통 미디어 쿼리 & 반응형 단위 */
+@import "./variables.css";
+
+/* 2. 모바일 우선(Mobile First) 기준 스타일 */
+/* ========== Small (≥576px) ========== */
+@media (min-width: var(--breakpoint-sm)) {
+  .container {
+    max-width: 540px;
+  }
+  .grid-sm-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========== Medium (≥768px) ========== */
+@media (min-width: var(--breakpoint-md)) {
+  .container {
+    max-width: 720px;
+  }
+  .grid-md-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========== Large (≥992px) ========== */
+@media (min-width: var(--breakpoint-lg)) {
+  .container {
+    max-width: 960px;
+  }
+  .grid-lg-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* ========== Extra Large (≥1200px) ========== */
+@media (min-width: var(--breakpoint-xl)) {
+  .container {
+    max-width: 1140px;
+  }
+  .grid-xl-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* 3. 유틸리티 클래스 (반응형 단위) */
+.responsive-text {
+  font-size: clamp(1rem, 2vw + 0.5rem, 2rem);
+}
+.responsive-padding {
+  padding: clamp(0.5rem, 2vw, 2rem);
+}
+/* 4. 다크모드 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+}

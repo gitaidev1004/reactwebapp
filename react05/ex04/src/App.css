@@ -1,0 +1,7 @@
+body { font-family: sans-serif; background: #f9fafb; color:#333; }
+h1,h2 { margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 600px; }
+th, td { padding: 10px 12px; border-bottom: 1px solid #e5e7eb; text-align:left; }
+thead th { background: #f3f4f6; position: sticky; top:0; z-index:2; }
+button { cursor: pointer; }
+button:focus-visible { outline: 2px solid #005fcc; outline-offset: 2px; }

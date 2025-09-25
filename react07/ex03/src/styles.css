@@ -1,0 +1,10 @@
+.nav-btn {
+  padding: 6px 10px;
+  color: #333;
+  text-decoration: none;
+}
+.nav-btn.active {
+  background: #007bff;
+  color: #fff;
+  border-radius: 6px;
+}
